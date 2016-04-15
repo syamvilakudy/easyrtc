@@ -483,12 +483,7 @@ var Easyrtc = function() {
     //
     var namedLocalMediaStreams = {};
     var sessionFields = [];
-    var receivedMediaConstraints = {
-        'mandatory': {
-            'OfferToReceiveAudio': true,
-            'OfferToReceiveVideo': true
-        }
-    };
+    var receivedMediaConstraints = {"offerToReceiveAudio":true,"offerToReceiveVideo":true};
     /**
      * Control whether the client requests audio from a peer during a call.
      * Must be called before the call to have an effect.
